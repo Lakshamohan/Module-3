@@ -16,15 +16,17 @@ To write a Python program that accepts a string and removes the character at a s
 
 ## 💻 Program
 ```
-n=int(input())
-def remove(a):
-    for i in range(0,len(a)):
-        if(i!=n):
-            print(a[i],end='')
+def remove(text):
+    result = ''
+    for i in range(len(text)):
+        if i != 3:  
+            result += text[i]
+    return result
+print(remove("learning")) 
 ```
 
 ## Output
-<img width="954" height="242" alt="438595262-4ee6468d-65f9-471f-a4bf-5236659105fe" src="https://github.com/user-attachments/assets/67ae57a8-fe38-4c19-8c93-d0042789d501" />
+<img width="604" height="331" alt="438728156-93569b3b-d69c-4ce8-9cba-e74fbbc19b21" src="https://github.com/user-attachments/assets/97df7b3e-624c-45f5-a229-12df2cc6246d" />
 
 ## Result
-Thus the program executed successfully.
+Thus,the Python program that accepts a string and removes the character at a specified index is created successfully.
